@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ctullohj2ulke"]
+
+[ext_resource type="Script" uid="uid://e163wh70dbvn" path="res://scripts/Boss.gd" id="1_eynm2"]
+[ext_resource type="Texture2D" uid="uid://cwv72v5mjej43" path="res://assets/enemies/boss.png" id="2_6ig5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5h11f"]
+size = Vector2(41, 217)
+
+[node name="Boss" type="Area2D" unique_id=1038219524]
+script = ExtResource("1_eynm2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=732678391]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_5h11f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1538144504]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("2_6ig5k")

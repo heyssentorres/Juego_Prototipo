@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://24l5yli3hfdq"]
+
+[ext_resource type="Script" uid="uid://bh878srvegum1" path="res://scripts/LevelUpScreen.gd" id="1_h5yei"]
+
+[node name="LevelUpScreen" type="CanvasLayer" unique_id=1231526733]
+layer = 4
+script = ExtResource("1_h5yei")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1180835603]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7764706)
+
+[node name="Title" type="Label" parent="." unique_id=1103872247]
+offset_left = 445.0
+offset_top = 187.0
+offset_right = 704.0
+offset_bottom = 210.0
+text = "¡Subiste de nivel! Elije una mejora"
+horizontal_alignment = 1
+
+[node name="Slot1Button" type="Button" parent="." unique_id=1376555248]
+offset_left = 493.0
+offset_top = 239.0
+offset_right = 658.0
+offset_bottom = 270.0
+text = "Cadencia de disparo"
+
+[node name="Slot2Button" type="Button" parent="." unique_id=1418024457]
+offset_left = 525.0
+offset_top = 302.0
+offset_right = 620.0
+offset_bottom = 333.0
+text = "Daño +25%"
+
+[node name="Slot3Button" type="Button" parent="." unique_id=1638334194]
+offset_left = 515.0
+offset_top = 366.0
+offset_right = 636.0
+offset_bottom = 397.0
+text = "Proyectil extra"

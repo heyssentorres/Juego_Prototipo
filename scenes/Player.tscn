@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c81a6e6j8ul0g"]
+
+[ext_resource type="Script" uid="uid://bg184sxw4qubb" path="res://scripts/Player.gd" id="1_70d11"]
+[ext_resource type="PackedScene" uid="uid://o4hmvo258f1h" path="res://scenes/Bullet.tscn" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://boktlnr77tal0" path="res://assets/player/ship_right.png" id="5_khinc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5h11f"]
+radius = 16.0
+
+[node name="Player" type="Area2D" unique_id=2017685877]
+script = ExtResource("1_70d11")
+bullet_scene = ExtResource("2_g2els")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810661748]
+shape = SubResource("CircleShape2D_5h11f")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1075919448]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1359489609]
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("5_khinc")

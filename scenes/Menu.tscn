@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://vgnjs212r8c7"]
+
+[ext_resource type="Script" uid="uid://cy32y62cogwto" path="res://scripts/Menu.gd" id="1_xdvgc"]
+
+[node name="Menu" type="Control" unique_id=972425815]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xdvgc")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1537808786]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1112.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.023529412, 0.03137255, 0.047058824, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1687681429]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 97.0
+offset_right = 632.0
+offset_bottom = 146.0
+text = "NAVE NODRIZA
+"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="." unique_id=1266758187]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 271.0
+offset_right = 600.0
+offset_bottom = 302.0
+text = "Jugar
+"

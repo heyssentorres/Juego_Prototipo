@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://uyiat3mbg5pw"]
+
+[ext_resource type="PackedScene" uid="uid://b8bl71812kv2s" path="res://scenes/EnemySpawner.tscn" id="1_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://dx3rdc6dpb8su" path="res://scenes/HUD.tscn" id="2_rarhs"]
+[ext_resource type="PackedScene" uid="uid://c81a6e6j8ul0g" path="res://scenes/Player.tscn" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://c8k634rok0dby" path="res://scenes/GameOverScreen.tscn" id="4_rarhs"]
+[ext_resource type="PackedScene" uid="uid://24l5yli3hfdq" path="res://scenes/LevelUpScreen.tscn" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://8seupo4krs8q" path="res://scenes/VictoryScreen.tscn" id="6_c01mt"]
+
+[node name="Main" type="Node2D" unique_id=299351129]
+
+[node name="EnemySpawner" parent="." unique_id=1752487993 instance=ExtResource("1_0bbpv")]
+
+[node name="HUD" parent="." unique_id=357861216 instance=ExtResource("2_rarhs")]
+
+[node name="Player" parent="." unique_id=2017685877 instance=ExtResource("3_vcsgt")]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1844716421]
+z_index = -1
+custom_minimum_size = Vector2(100000, 100000)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GameOverScreen" parent="." unique_id=1480447896 instance=ExtResource("4_rarhs")]
+
+[node name="LevelUpScreen" parent="." unique_id=1231526733 instance=ExtResource("5_vcsgt")]
+
+[node name="VictoryScreen" parent="." unique_id=1549630982 instance=ExtResource("6_c01mt")]

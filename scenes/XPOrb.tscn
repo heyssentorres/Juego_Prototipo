@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dt8q5u70fqxno"]
+
+[ext_resource type="Script" uid="uid://b3swis6422tx3" path="res://scripts/XPOrb.gd" id="1_x6nxk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5h11f"]
+radius = 8.0
+
+[node name="XPOrb" type="Area2D" unique_id=1475393289]
+script = ExtResource("1_x6nxk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720107372]
+shape = SubResource("CircleShape2D_5h11f")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=267202106]
+color = Color(0.7294118, 1, 0.23921569, 1)
+polygon = PackedVector2Array(-6, -6, 6, -6, 6, 6, -6, 6)

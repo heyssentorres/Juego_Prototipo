@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c8k634rok0dby"]
+
+[ext_resource type="Script" uid="uid://4i8cwr018t1e" path="res://scripts/GameOverScreen.gd" id="1_jb1p3"]
+[ext_resource type="Texture2D" uid="uid://c1um6i6h5epdf" path="res://assets/ui/game_over.png" id="2_1tm0t"]
+
+[node name="GameOverScreen" type="CanvasLayer" unique_id=1480447896]
+layer = 5
+script = ExtResource("1_jb1p3")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=449924036]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7882353)
+
+[node name="GameOverImage" type="TextureRect" parent="." unique_id=1060827554]
+offset_left = 379.0
+offset_top = 103.0
+offset_right = 799.0
+offset_bottom = 523.0
+texture = ExtResource("2_1tm0t")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=837564273]
+offset_left = 520.0
+offset_top = 375.0
+offset_right = 588.0
+offset_bottom = 399.0
+
+[node name="TimeLabel" type="Label" parent="." unique_id=1167171684]
+offset_left = 520.0
+offset_top = 345.0
+offset_right = 560.0
+offset_bottom = 368.0
+
+[node name="RetryButton" type="Button" parent="." unique_id=1085462915]
+offset_left = 550.0
+offset_top = 428.0
+offset_right = 641.0
+offset_bottom = 459.0
+text = "Reintentar
+"

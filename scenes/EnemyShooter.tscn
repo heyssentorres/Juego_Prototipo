@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://icmjgs5de86j"]
+
+[ext_resource type="Script" uid="uid://dhu5aafoecanq" path="res://scripts/EnemyShooter.gd" id="1_w0ulb"]
+[ext_resource type="PackedScene" uid="uid://dt8q5u70fqxno" path="res://scenes/XPOrb.tscn" id="2_qjatx"]
+[ext_resource type="PackedScene" uid="uid://bix2fs7tiv4aq" path="res://scenes/EnemyBullet.tscn" id="3_wldsa"]
+[ext_resource type="Texture2D" uid="uid://dychrdm3ibclo" path="res://assets/enemies/enemy_shooteadar.png" id="4_w0ulb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5h11f"]
+radius = 30.0
+
+[node name="EnemyShooter" type="Area2D" unique_id=169596368]
+script = ExtResource("1_w0ulb")
+speed = 260.0
+xp_orb_scene = ExtResource("2_qjatx")
+projectile_scene = ExtResource("3_wldsa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=52042527]
+shape = SubResource("CircleShape2D_5h11f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=885446912]
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("4_w0ulb")

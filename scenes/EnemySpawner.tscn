@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b8bl71812kv2s"]
+
+[ext_resource type="Script" uid="uid://c3gpqgg62tvpc" path="res://scripts/EnemySpawner.gd" id="1_devoi"]
+[ext_resource type="PackedScene" uid="uid://b86y1fpgm1gn1" path="res://scenes/Enemy.tscn" id="2_xl0gr"]
+[ext_resource type="PackedScene" uid="uid://ctullohj2ulke" path="res://scenes/Boss.tscn" id="3_csfkq"]
+[ext_resource type="PackedScene" uid="uid://bry5w0w0fhc2p" path="res://scenes/EnemyFast.tscn" id="4_exs7w"]
+[ext_resource type="PackedScene" uid="uid://icmjgs5de86j" path="res://scenes/EnemyShooter.tscn" id="5_3d38x"]
+
+[node name="EnemySpawner" type="Node2D" unique_id=1752487993]
+script = ExtResource("1_devoi")
+enemy_scene = ExtResource("2_xl0gr")
+boss_scene = ExtResource("3_csfkq")
+enemy_fast_scene = ExtResource("4_exs7w")
+enemy_shooter_scene = ExtResource("5_3d38x")
+enemy_shooter_start_time = 180.0
+enemy_shooter_weight = 0.25

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dx3rdc6dpb8su"]
+
+[ext_resource type="Script" uid="uid://bvaufca2t823k" path="res://scripts/HUD.gd" id="1_qpvh6"]
+
+[node name="HUD" type="CanvasLayer" unique_id=357861216]
+script = ExtResource("1_qpvh6")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=662569765]
+offset_left = 10.0
+offset_top = 40.0
+offset_right = 50.0
+offset_bottom = 63.0
+horizontal_alignment = 1
+
+[node name="TimeLabel" type="Label" parent="." unique_id=922477039]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 33.0
+horizontal_alignment = 2
+
+[node name="HealthLabel" type="Label" parent="." unique_id=412485006]
+offset_left = 10.0
+offset_top = 70.0
+offset_right = 50.0
+offset_bottom = 93.0
+
+[node name="XPBar" type="ProgressBar" parent="." unique_id=1110808101]
+offset_left = 250.0
+offset_top = 10.0
+offset_right = 950.0
+offset_bottom = 37.0
+
+[node name="BossHealthBar" type="ProgressBar" parent="." unique_id=2015637939]
+offset_left = 376.0
+offset_top = 70.0
+offset_right = 826.0
+offset_bottom = 97.0
